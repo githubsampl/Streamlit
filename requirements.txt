@@ -1,0 +1,16 @@
+scikit-learn==1.3.2
+pandas==1.3.3
+Flask==3.0.0
+sklearn
+numpy
+nltk
+wordcloud
+joblib
+Gunicorn
+seaborn
+streamlit
+imbalanced-learn
+flask-ngrok
+re
+
+# Add other dependencies as needed

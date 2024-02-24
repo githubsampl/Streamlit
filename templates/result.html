@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: white;
+            font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; 
+            color:black;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-top: 30px;
+        }
+
+        img{
+            height: 500px;
+            width: 600px;
+        }
+
+        p {
+            margin-top: 30px;
+            font-size: 20px;
+            padding-left: 5px;
+        }
+        a{
+            font-size: 20px;
+            text-decoration: none;
+            
+        }
+    button{
+            background-color: #fcfcfc;
+            border: 1px solid #080808;
+            border-radius: 8px;
+            height: 50px;
+            color: #050505;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 12px 14px;
+            margin-top: 50px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 150px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Result</h1>
+    <p>Prediction: {{ prediction }}</p>
+    <img src="../static/images/spam.gif" alt="Your GIF">
+    <button><a href="./">Back</a></button>
+</body>
+</html>
+

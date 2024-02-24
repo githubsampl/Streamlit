@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Message Classification</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: white;
+            font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; 
+        }
+        h1{
+            color:black;
+            text-align: center;
+            padding: 10px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 200px;
+        }
+
+        .input {
+            background-color: #fcfcfc;
+            border: 1px solid #070707;
+            border-radius: 8px;
+            color: #050505;
+            width: 600px;
+            height: 65px;
+            padding: 14px 24px;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 12px 14px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow added */
+        }
+
+        .input:hover {
+            border: 1px solid #fff;
+        }
+
+
+        button {
+            background-color: #fcfcfc;
+            border: 1px solid #080808;
+            border-radius: 8px;
+            color: #050505;
+            padding: 14px 24px;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 12px 14px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        button:hover {
+            box-shadow: rgb(0, 0, 0) 0px 3px 3px 0px, rgb(255, 255, 255) 0px 0px 0px 3.5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Email Spam Detetection</h1>
+    <form action="/predict" method="post">
+        <input placeholder="Enter Your Message..." type="text" id="message" name="message" class="input" required>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
